@@ -1,0 +1,1 @@
+rm -rf bin obj && dotnet restore SRE-net9.csproj && dotnet run --project SRE-net9.csproj -f net9.0-ios -c Release -p:ArchiveOnBuild=true -r:ios-arm64 /p:_DeviceName=$1 /p:EnableAssemblyILStripping=false -v:n
